@@ -1,0 +1,106 @@
+unit cadastroFuncionario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls;
+
+type
+  TfrmCadastroFuncionario = class(TForm)
+    lblcodfuncio: TLabel;
+    lblnomefuncionario: TLabel;
+    lblloginfuncio: TLabel;
+    Label4: TLabel;
+    lblpermissaofuncio: TLabel;
+    btnsalvar: TButton;
+    btnalterar: TButton;
+    btnexcluir: TButton;
+    btninserir: TButton;
+    btncancelar: TButton;
+    btntelaconsulta: TButton;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    DBEdit5: TDBEdit;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnsalvarClick(Sender: TObject);
+    procedure btnalterarClick(Sender: TObject);
+    procedure btnexcluirClick(Sender: TObject);
+    procedure btninserirClick(Sender: TObject);
+    procedure btncancelarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastroFuncionario: TfrmCadastroFuncionario;
+
+implementation
+
+{$R *.dfm}
+
+uses conexao;
+
+procedure TfrmCadastroFuncionario.btnalterarClick(Sender: TObject);
+begin
+dmMrBooks.queryFuncionario.edit;
+btnsalvar.Enabled:= True;
+btnalterar.Enabled:= False;
+btnexcluir.Enabled:=False;
+btninserir.Enabled:= False;
+btncancelar.Enabled:= True;
+end;
+
+procedure TfrmCadastroFuncionario.btncancelarClick(Sender: TObject);
+begin
+dmMrBooks.queryFuncionario.cancel;
+btnsalvar.Enabled:= True;
+btnalterar.Enabled:= True;
+btnexcluir.Enabled:=True;
+btninserir.Enabled:= True;
+btncancelar.Enabled:= False;
+end;
+
+procedure TfrmCadastroFuncionario.btnexcluirClick(Sender: TObject);
+begin
+dmMrBooks.queryFuncionario.delete;
+btnsalvar.Enabled:= False;
+btnalterar.Enabled:= True;
+btnexcluir.Enabled:=True;
+btninserir.Enabled:= True;
+btncancelar.Enabled:= True;
+end;
+
+procedure TfrmCadastroFuncionario.btninserirClick(Sender: TObject);
+begin
+dmMrBooks.queryFuncionario.append;
+btnsalvar.Enabled:= True;
+btnalterar.Enabled:= True;
+btnexcluir.Enabled:=True;
+btninserir.Enabled:= True;
+btncancelar.Enabled:= True;
+end;
+
+procedure TfrmCadastroFuncionario.btnsalvarClick(Sender: TObject);
+begin
+dmMrBooks.queryFuncionario.post;
+dmMrBooks.queryFuncionario.Close;
+dmMrBooks.queryFuncionario.Open;
+btnsalvar.Enabled:= False;
+btnalterar.Enabled:= True;
+btnexcluir.Enabled:=True;
+btninserir.Enabled:= True;
+btncancelar.Enabled:= True;
+end;
+
+procedure TfrmCadastroFuncionario.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree;
+frmFuncionario:=nil;
+end;
+
+end.

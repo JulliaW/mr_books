@@ -1,0 +1,60 @@
+unit cadastroFuncionario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls;
+
+type
+  TfrmFuncionario = class(TForm)
+    lblcodfuncio: TLabel;
+    lblnomefuncionario: TLabel;
+    lblloginfuncio: TLabel;
+    Label4: TLabel;
+    lblpermissaofuncio: TLabel;
+    btnsalvar: TButton;
+    btnalterar: TButton;
+    btnexcluir: TButton;
+    btninserir: TButton;
+    btncancelar: TButton;
+    btntelaconsulta: TButton;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    DBEdit5: TDBEdit;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnsalvarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFuncionario: TfrmFuncionario;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmFuncionario.btnsalvarClick(Sender: TObject);
+begin
+dmMrBooks.queryFuncionario.post;
+dmMrBooks.queryFuncionario.Close;
+dmMrBooks.queryFuncionario.Open;
+btnsalvar.Enabled:= False;
+btnalterar.Enabled:= True;
+btnexcluir.Enabled:=True;
+btninserir.Enabled:= True;
+btncancelar.Enabled:= True;
+end;
+
+procedure TfrmFuncionario.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree;
+frmFuncionario:=nil;
+end;
+
+end.

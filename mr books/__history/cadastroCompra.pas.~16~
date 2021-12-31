@@ -1,0 +1,72 @@
+unit cadastroCompra;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.Mask,
+  Vcl.DBCtrls, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+
+type
+  TfrmCadastroCompra = class(TForm)
+    lblconsultacliente: TLabel;
+    btnConsultaProduto: TImage;
+    Label1: TLabel;
+    btnConsultaCliente: TImage;
+    rdgConsultaProduto: TRadioGroup;
+    edtConsultaProduto: TEdit;
+    rdgconsultacliente: TRadioGroup;
+    edtconsultacliente: TEdit;
+    lbbResultado: TListBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    dbedtcliente: TDBEdit;
+    dbedtcpf: TDBEdit;
+    dbedttel: TDBEdit;
+    dbedtprod: TDBEdit;
+    DBEdit5: TDBEdit;
+    edtQuant: TEdit;
+    btnCalcular: TImage;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastroCompra: TfrmCadastroCompra;
+
+implementation
+
+{$R *.dfm}
+
+uses telaprincipal;
+var
+calcular, valor, qtd: double;
+
+procedure TfrmCadastroCompra.btnCalcularClick(Sender: TObject);
+begin
+valor:= strtofloat(DBEdit5.Text);
+Qtd:= strtofloat(edtQuant.Text);
+calcular:= valor * Qtd;
+lbbResultado.Items.Add('Nome Cliente: '+dbedtcliente.Text);
+lbbResultado.Items.Add('Cpf do cliente: '+dbedtcpf.Text);
+lbbResultado.Items.Add('Telefone: '+dbedttel.Text);
+lbbResultado.Items.Add('Produto: '+dbedtprod.Text);
+lbbResultado.Items.Add('Valor: '+floattostr(calcular));
+lbbResultado.Items.Add('--------------------------------');
+end;
+
+procedure TfrmCadastroCompra.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action:=caFree;
+frmCadastroCompra:=nil;
+end;
+
+end.

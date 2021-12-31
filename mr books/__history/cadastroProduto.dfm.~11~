@@ -1,0 +1,234 @@
+object frmCadastroProduto: TfrmCadastroProduto
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'frmCadastroProduto'
+  ClientHeight = 497
+  ClientWidth = 769
+  Color = clYellow
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 162
+    Top = 25
+    Width = 74
+    Height = 13
+    Caption = 'C'#243'digo do Livro'
+  end
+  object Label2: TLabel
+    Left = 26
+    Top = 25
+    Width = 87
+    Height = 13
+    Caption = 'Descri'#231#227'o do Livro'
+  end
+  object Label3: TLabel
+    Left = 26
+    Top = 73
+    Width = 76
+    Height = 13
+    Caption = 'G'#234'nero do Livro'
+  end
+  object Label4: TLabel
+    Left = 162
+    Top = 73
+    Width = 68
+    Height = 13
+    Caption = 'Autor do Livro'
+  end
+  object Label5: TLabel
+    Left = 26
+    Top = 123
+    Width = 72
+    Height = 13
+    Caption = 'Edi'#231#227'o do Livro'
+  end
+  object Label6: TLabel
+    Left = 26
+    Top = 171
+    Width = 101
+    Height = 13
+    Caption = 'Quantida no Estoque'
+  end
+  object Label7: TLabel
+    Left = 297
+    Top = 123
+    Width = 133
+    Height = 13
+    Caption = 'Numero de Paginas do Livro'
+  end
+  object Label8: TLabel
+    Left = 162
+    Top = 171
+    Width = 65
+    Height = 13
+    Caption = 'Valor do Livro'
+  end
+  object Label9: TLabel
+    Left = 162
+    Top = 123
+    Width = 49
+    Height = 13
+    Caption = 'ISBN Livro'
+  end
+  object btnCadastrar: TBitBtn
+    Left = 26
+    Top = 229
+    Width = 75
+    Height = 25
+    Caption = 'Cadastrar'
+    Kind = bkAll
+    NumGlyphs = 2
+    TabOrder = 0
+    OnClick = btnCadastrarClick
+  end
+  object btnSalvar: TBitBtn
+    Left = 107
+    Top = 229
+    Width = 75
+    Height = 25
+    Caption = 'Salvar'
+    ModalResult = 6
+    NumGlyphs = 2
+    TabOrder = 1
+    OnClick = btnSalvarClick
+  end
+  object btnCancelar: TBitBtn
+    Left = 269
+    Top = 229
+    Width = 75
+    Height = 25
+    Caption = 'Cancelar'
+    Kind = bkNo
+    NumGlyphs = 2
+    TabOrder = 2
+    OnClick = btnCancelarClick
+  end
+  object btnAlterar: TBitBtn
+    Left = 188
+    Top = 229
+    Width = 75
+    Height = 25
+    Caption = 'Alterar'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 3
+    OnClick = btnAlterarClick
+  end
+  object btnExcluir: TBitBtn
+    Left = 350
+    Top = 229
+    Width = 75
+    Height = 25
+    Caption = 'Excluir'
+    Kind = bkCancel
+    NumGlyphs = 2
+    TabOrder = 4
+    OnClick = btnExcluirClick
+  end
+  object DBEdit1: TDBEdit
+    Left = 26
+    Top = 46
+    Width = 121
+    Height = 21
+    DataField = 'titulo_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 5
+  end
+  object DBEdit2: TDBEdit
+    Left = 162
+    Top = 44
+    Width = 121
+    Height = 21
+    DataField = 'cod_produto'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 6
+  end
+  object DBEdit3: TDBEdit
+    Left = 26
+    Top = 92
+    Width = 121
+    Height = 21
+    DataField = 'genero_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 7
+  end
+  object DBEdit4: TDBEdit
+    Left = 162
+    Top = 92
+    Width = 121
+    Height = 21
+    DataField = 'autor_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 8
+  end
+  object DBEdit5: TDBEdit
+    Left = 26
+    Top = 144
+    Width = 121
+    Height = 21
+    DataField = 'edicao_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 9
+  end
+  object DBEdit6: TDBEdit
+    Left = 162
+    Top = 144
+    Width = 121
+    Height = 21
+    DataField = 'isbn_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 10
+  end
+  object DBEdit7: TDBEdit
+    Left = 297
+    Top = 144
+    Width = 121
+    Height = 21
+    DataField = 'num_pg_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 11
+  end
+  object DBEdit8: TDBEdit
+    Left = 26
+    Top = 190
+    Width = 121
+    Height = 21
+    DataField = 'qtd_estoque_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 12
+  end
+  object DBEdit9: TDBEdit
+    Left = 162
+    Top = 190
+    Width = 121
+    Height = 21
+    DataField = 'valor_livro'
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 13
+  end
+  object DBGrid1: TDBGrid
+    Left = 48
+    Top = 272
+    Width = 637
+    Height = 217
+    DataSource = dmMrBooks.dsProduto
+    TabOrder = 14
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+end

@@ -1,0 +1,37 @@
+unit conexao;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  TdmMrBooks = class(TDataModule)
+    conexao: TADOConnection;
+    queryCliente: TADOQuery;
+    dsCliente: TDataSource;
+    queryFuncionario: TADOQuery;
+    dsFuncionario: TDataSource;
+    queryProduto: TADOQuery;
+    dsProduto: TDataSource;
+    queryComunicado: TADOQuery;
+    dsComunicado: TDataSource;
+    queryVenda: TADOQuery;
+    dsVenda: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmMrBooks: TdmMrBooks;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+
+end.

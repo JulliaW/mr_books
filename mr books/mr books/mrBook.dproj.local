@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/06 20:26:22.000.437,=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/27 19:39:44.000.286,=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/27 19:40:03.000.935,=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/10/27 19:42:25.000.588,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\login.pas=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/27 19:42:25.000.588,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\login.dfm=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/10/27 19:52:57.000.596,=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/10/27 20:05:05.000.235,=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2021/10/27 20:05:14.000.350,=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2021/10/27 21:00:17.000.397,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\telaPrincipal.dfm=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2021/10/27 21:00:17.000.397,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\telaPrincipal.pas=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/10/27 21:33:45.000.365,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\mrBook.dproj=C:\Users\Jullia Weber\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/10/28 20:25:37.000.637,=E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\Unit1.pas</Transaction>
+    <Transaction>2021/10/28 20:43:28.000.718,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\Unit1.pas=E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\conexao.pas</Transaction>
+    <Transaction>2021/10/28 20:43:28.000.718,E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\Unit1.dfm=E:\Tudo\1 -Faculdade\2 semestre\Projeto livraria\conexao.dfm</Transaction>
+    <Transaction>2021/10/28 21:24:44.000.179,=E:\Tudo\1 -Faculdade\2 semestre\mr books\Unit2.pas</Transaction>
+    <Transaction>2021/10/28 21:35:37.000.251,E:\Tudo\1 -Faculdade\2 semestre\mr books\cadastroCliente.pas=E:\Tudo\1 -Faculdade\2 semestre\mr books\Unit2.pas</Transaction>
+    <Transaction>2021/10/28 21:35:37.000.251,E:\Tudo\1 -Faculdade\2 semestre\mr books\cadastroCliente.dfm=E:\Tudo\1 -Faculdade\2 semestre\mr books\Unit2.dfm</Transaction>
+    <Transaction>2021/10/28 21:59:01.000.205,=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit2.pas</Transaction>
+    <Transaction>2021/10/28 22:00:45.000.100,E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit2.dfm=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\cadastroProduto.dfm</Transaction>
+    <Transaction>2021/10/28 22:00:45.000.100,E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit2.pas=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\cadastroProduto.pas</Transaction>
+    <Transaction>2021/10/28 22:02:52.000.931,=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit2.pas</Transaction>
+    <Transaction>2021/10/28 22:03:09.000.123,=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit3.pas</Transaction>
+    <Transaction>2021/10/28 22:04:48.000.156,E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit2.dfm=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\cadastroCompra.dfm</Transaction>
+    <Transaction>2021/10/28 22:04:48.000.156,E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit2.pas=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\cadastroCompra.pas</Transaction>
+    <Transaction>2021/10/28 22:05:08.000.167,E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit3.pas=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\cadastroFuncionario.pas</Transaction>
+    <Transaction>2021/10/28 22:05:08.000.167,E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\Unit3.dfm=E:\Tudo\1 -Faculdade\2 semestre\backup 2\mr books\cadastroFuncionario.dfm</Transaction>
+    <Transaction>2021/11/09 21:49:41.000.608,D:\Nuvem\OneDriveCPS\OneDrive - Etec Centro Paula Souza\Desktop\mr books\mr books\login.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

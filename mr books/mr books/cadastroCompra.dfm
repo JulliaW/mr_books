@@ -1,0 +1,22 @@
+object frmCompra: TfrmCompra
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'frmCompra'
+  ClientHeight = 497
+  ClientWidth = 769
+  Color = clAqua
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+end

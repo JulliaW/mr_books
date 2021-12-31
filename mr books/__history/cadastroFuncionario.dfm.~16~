@@ -1,0 +1,154 @@
+object frmCadastroFuncionario: TfrmCadastroFuncionario
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderStyle = bsNone
+  Caption = 'frmCadastroFuncionario'
+  ClientHeight = 497
+  ClientWidth = 769
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblcodfuncio: TLabel
+    Left = 24
+    Top = 32
+    Width = 37
+    Height = 13
+    Caption = 'C'#243'digo:'
+  end
+  object lblnomefuncionario: TLabel
+    Left = 24
+    Top = 72
+    Width = 31
+    Height = 13
+    Caption = 'Nome:'
+  end
+  object lblloginfuncio: TLabel
+    Left = 24
+    Top = 112
+    Width = 29
+    Height = 13
+    Caption = 'Login:'
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 152
+    Width = 34
+    Height = 13
+    Caption = 'Senha:'
+  end
+  object lblpermissaofuncio: TLabel
+    Left = 24
+    Top = 192
+    Width = 52
+    Height = 13
+    Caption = 'Permiss'#227'o:'
+  end
+  object btnSalvar: TButton
+    Left = 24
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Salvar'
+    TabOrder = 0
+    OnClick = btnSalvarClick
+  end
+  object btnAlterar: TButton
+    Left = 136
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Alterar'
+    TabOrder = 1
+    OnClick = btnAlterarClick
+  end
+  object btnExcluir: TButton
+    Left = 248
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Excluir'
+    TabOrder = 2
+    OnClick = btnExcluirClick
+  end
+  object btnCadastrar: TButton
+    Left = 360
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Inserir'
+    TabOrder = 3
+    OnClick = btnCadastrarClick
+  end
+  object btnCancelar: TButton
+    Left = 472
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Cancelar'
+    TabOrder = 4
+    OnClick = btnCancelarClick
+  end
+  object btntelaconsulta: TButton
+    Left = 640
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Tela consulta'
+    TabOrder = 5
+  end
+  object DBEdit1: TDBEdit
+    Left = 24
+    Top = 51
+    Width = 121
+    Height = 21
+    DataField = 'cod_funcionario'
+    DataSource = dmMrBooks.dsFuncionario
+    TabOrder = 6
+  end
+  object DBEdit2: TDBEdit
+    Left = 24
+    Top = 165
+    Width = 121
+    Height = 21
+    DataField = 'senha_funcionario'
+    DataSource = dmMrBooks.dsFuncionario
+    TabOrder = 7
+  end
+  object DBEdit3: TDBEdit
+    Left = 24
+    Top = 85
+    Width = 121
+    Height = 21
+    DataField = 'nome_funcionario'
+    DataSource = dmMrBooks.dsFuncionario
+    TabOrder = 8
+  end
+  object DBEdit4: TDBEdit
+    Left = 24
+    Top = 131
+    Width = 121
+    Height = 21
+    DataField = 'login_funcionario'
+    DataSource = dmMrBooks.dsFuncionario
+    TabOrder = 9
+  end
+  object DBEdit5: TDBEdit
+    Left = 24
+    Top = 211
+    Width = 121
+    Height = 21
+    DataField = 'permissao_funcionario'
+    DataSource = dmMrBooks.dsFuncionario
+    TabOrder = 10
+  end
+end

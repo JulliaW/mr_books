@@ -1,0 +1,25 @@
+program mrBook;
+
+uses
+  Vcl.Forms,
+  telaPrincipal in 'telaPrincipal.pas' {frmPrincipal},
+  conexao in 'conexao.pas' {dmMrBooks: TDataModule},
+  cadastroCliente in 'cadastroCliente.pas' {frmCadastroCliente},
+  cadastroProduto in 'cadastroProduto.pas' {frmCadastroProduto},
+  cadastroCompra in 'cadastroCompra.pas' {frmCompra},
+  cadastroFuncionario in 'cadastroFuncionario.pas' {frmFuncionario},
+  login in 'login.pas' {frmLogin},
+  teste in 'teste.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TdmMrBooks, dmMrBooks);
+  Application.CreateForm(TfrmCadastroProduto, frmCadastroProduto);
+  Application.CreateForm(TfrmCadastroCliente, frmCadastroCliente);
+  Application.CreateForm(TfrmCompra, frmCompra);
+  Application.Run;
+end.

@@ -1,0 +1,37 @@
+unit login;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmLogin = class(TForm)
+    telaPrincipal: TButton;
+    procedure telaPrincipalClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogin: TfrmLogin;
+
+implementation
+
+{$R *.dfm}
+
+uses telaPrincipal;
+
+procedure TfrmLogin.telaPrincipalClick(Sender: TObject);
+begin
+if not(Assigned(frmPrincipal)) then
+frmPrincipal.create(self);
+//frmPrincipal.Parent:=frmPrincipal.panelPrincipal;
+frmPrincipal.Show;
+frmLogin.Hide;
+end;
+
+end.
